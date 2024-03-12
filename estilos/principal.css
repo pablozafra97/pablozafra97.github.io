@@ -1,0 +1,181 @@
+body{
+    font-size: large;
+    background-color: #06384d;
+    text-align: center;
+}
+
+.watermark{
+    position:fixed;
+    top: 10px;
+    left: 10px;
+    color:white;
+    z-index: 999;
+}
+
+.watermark img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px
+}
+
+#title1{
+    color:white;
+}
+
+.chat-wrapper{
+    display:inline-block;
+}
+
+.chat-box{
+    background-color: #ffffff;
+    width: 340px;
+}
+
+#chat1 .chat-box{
+    background-image: url('../imagenes/wassa-darkmode2.png');
+}
+
+#chat2 .chat-box{
+    background-color: #000000;
+}
+
+.chat-header{
+    color: white;
+    background-color: #001720;
+}
+
+.back-button{
+    display:inline-block;
+    width:15%;
+    text-align: center;
+}
+
+.user-settings{
+    display:inline-block;
+    width:15%;
+    text-align: center;
+}
+
+.user-title{
+    display:inline-block;
+    width:70%;
+    padding: 10px 0px;
+}
+
+.user-title-title{
+    display:inline-block;
+    width:70%;
+}
+
+.user-title-subtitle{
+    font-size: x-small;
+}
+
+.messages-wrapper{
+    position:relative;
+}
+
+.go-up-button{
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    background-color: green;
+    border-radius: 50%;
+    position:absolute;
+    bottom: 25px;
+    right: 25px;
+    margin:auto;
+    text-align: center;
+    z-index: 1;
+}
+
+.messages{
+    text-align: left;
+    word-break: break-word;
+    justify-content: space-between;
+    padding: 2px 8px;
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.send-button{
+    text-align: left;
+    word-break: break-word;
+    justify-content: space-between;
+    padding: 8px 8px;
+}
+
+.chat-username{
+    padding: 0 8px 0 0
+}
+
+.chat-received, .chat-sent{
+    clear: both;
+    margin: 6px 0;
+    padding: 6px;
+}
+
+.chat-received {
+    float:left;
+    margin-right: 10%;
+    background-color: #001720;
+    color: #ffffff;
+    border-radius: 0 5px 5px 5px;
+}
+
+.new-message{
+    float:left;
+    width:100%;
+    text-align: center;
+    background-color: #008dc4ad;
+    color:rgb(0, 0, 0);
+    position: sticky;
+    bottom: 0;
+}
+
+.chat-sent{
+    float:right;
+    margin-left: 10%;
+    background-color: #005c4b;
+    color: #ffffff;
+    border-radius: 5px 0 5px 5px;
+}
+
+.chat-received span.time {
+    color: rgba(255, 255, 255, 0.45);
+    float: right;
+    margin-top: 8px;
+    margin-left: 5px;
+    font-size: 0.8rem;
+}
+
+
+.chat-sent span.time {
+    color: rgba(255, 255, 255, 0.45);
+    float: right;
+    margin-top: 8px;
+    margin-left: 5px;
+    font-size: 0.8rem;
+}
+
+.chat-username {
+    color: #A61B2B;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+}
+
+.send-button{
+    display:block
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+:disabled {
+    background-color:rgb(155, 155, 155);
+    color: linen;
+    opacity: 1;
+  }

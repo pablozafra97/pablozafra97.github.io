@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="estilos/principal.css">
 </head>
 <body>
-    <h1>Inicio</h1>
+    <h3 id="title1">Ejemplo de chatbox</h3>
+    <div class="chat-wrapper" id="chat1">
+        <div class="chat-box">
+            <div class="chat-header">
+                <div class="back-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 
+                        4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"></path>
+                    </svg>
+                </div><div class="user-title">
+                    <div class="user-title-title">Juan</div>
+                    <div class="user-title-subtitle">Toca para ver más info</div>
+                </div><div class="user-settings">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"></path>
+                    </svg>
+                </div></div>
+            <div class="messages-wrapper">
+                <div class="go-up-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4
+                         4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+                    </svg>
+                </div>
+                <div class="messages">
+                    <div class="chat-sent">Hola Juan<span class="time">12:58</span></div>
+                    <div class="chat-received"><div class="chat-username">Juan</div>Hola Pablo<span class="time">12:59</span></div>
+                    <div class="chat-sent">Qué tal<span class="time">13:00</span></div>
+                    <div class="chat-received"><div class="chat-username">Juan</div>Todo bien y tú?<span class="time">13:00</span></div>
+                    <div class="chat-sent">Todo bien<span class="time">12:58</span></div>
+                    <div class="chat-received"><div class="chat-username">Juan</div>Hiciste el trabajo de hoy?<span class="time">12:59</span></div>
+                    <div class="chat-sent">Aún no, lo dejaré para el lunes<span class="time">13:00</span></div>
+                    <div class="chat-received"><div class="chat-username">Juan</div>Pues yo lo acabé el viernes<span class="time">13:02</span></div>
+                    <div class="chat-received" ><div class="chat-username">Juan</div>Y qué has hecho el finde entonces?<span class="time">13:02</span></div>
+                    <div class="chat-sent">Pues como nació mi sobrino fui a verlo a casa de mi hermana<span class="time">13:00</span></div>
+                    <div class="new-message">Mensajes nuevos</div>
+                    <div class="chat-received" ><div class="chat-username">Juan</div>Yo me he estado viciando al lol. Ya 
+                    soy D1 en la season nueva con 60% de wr<span class="time">13:02</span></div>
+                </div>
+            </div>
+            <div class="send-button">
+                <input type="text" id="messageBox" placeholder="Escribir aquí" disabled>
+                <button id="send" title="Enviar" disabled>Enviar</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
